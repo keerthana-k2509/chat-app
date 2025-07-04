@@ -22,11 +22,11 @@ socket.on('chat-message', data => {
 });
 
 socket.on('user-joined', name => {
-    addMessage(`🟢 ${name} joined the chat`);
+    addMessage(`${name} joined the chat`);
 });
 
 socket.on('user-left', name => {
-    addMessage(`🔴 ${name} left the chat`);
+    addMessage(`${name} left the chat`);
 });
 
 function addMessage(msg) {
